@@ -14,6 +14,12 @@
   revision = "39e5462e111ffe165c62a88e2c25e1c1d1085bdb"
 
 [[projects]]
+  name = "github.com/dghubble/oauth1"
+  packages = ["."]
+  revision = "19d7291ba290f420ccea50e076322aca95f27fcd"
+  version = "v0.6.0"
+
+[[projects]]
   name = "github.com/dghubble/sling"
   packages = ["."]
   revision = "5a2946623f885d0cfcd7085b039baec12ad53fdd"
@@ -28,6 +34,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8358870a2a3be928947a311bc33b4a4d54c4faf3f1ffed000f16bf31bcdb8636"
+  inputs-digest = "420a7566a9a252327d2b6cefcb31d3a569e73e0f7ae36a2e9b282e6a1212c50a"
   solver-name = "gps-cdcl"
   solver-version = 1
