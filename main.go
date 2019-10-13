@@ -70,4 +70,20 @@ func main() {
 	}
 	log.Printf("%+v\n", resp) // log the response from Twitter
 	log.Printf("%+v\n", tweet) // log the tweet that was sent
+
+
+	// search tweets via the Twitter Client
+
+	searchParams := &twitter.SearchTweetParams { // initialize the search parameters
+		Query: "Brexit",
+	}
+
+	searchResult, resp, err := twitterClient.Search.Tweets(searchParams)
+	if err != nil {
+		log.Println("Twitter Bot was unable to search tweets ... ")
+		log.Println(err) // log the error
+	}
+	log.Printf("%+v\n", resp) // log the response from Twitter
+	log.Printf("%+v\n", searchResult) // log the search Results
+	
 }
